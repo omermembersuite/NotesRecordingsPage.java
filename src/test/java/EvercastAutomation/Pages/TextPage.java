@@ -1,9 +1,14 @@
 package EvercastAutomation.Pages;
 
+import EvercastAutomation.Utilities.BrowserUtils;
 import EvercastAutomation.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TextPage extends BasePage{
 
@@ -12,7 +17,7 @@ public class TextPage extends BasePage{
     }
 
 
-    @FindBy(xpath = "//*[@data-testid='drawtool-icon-text']")
+    @FindBy(xpath = "(//div[@data-testid='menu-item-with-submenu-icon']//*)[5]")
     public WebElement TextOnDrawTool;
 
     @FindBy(xpath = "//li[@role='menuitem']/span[contains(text(), 'Font Family')]")
@@ -27,13 +32,13 @@ public class TextPage extends BasePage{
     @FindBy(xpath = "//li[@role='menuitem']/span[contains(text(), 'Italicize')]")
     public WebElement ItalicizeWordOnTextOnDrawTool;
 
-
-
-    @FindBy(xpath = "//span[contains(text(),'Font Family')]")
+    @FindBy(xpath = "(//*[@role='menuitem'])[4]")
     public WebElement FontFamilyOnTextOnDrawTool;
 
+    @FindBy(xpath="//ul[@data-testid='font-family-fonts-selector']")
+    public WebElement FontFamilySelectorOnFontFamily;
 
-    @FindBy(xpath = "//*[@style='font-family: Arial;']")
+    @FindBy(xpath = "(//*[@role='menuitem'])[12]")
     public WebElement ArialFontOnFontFamilyOnTextOnDrawTool;
 
     @FindBy(xpath = "//span[contains(text(),'Arial Black')]")
@@ -116,6 +121,29 @@ public class TextPage extends BasePage{
 
     @FindBy(xpath = "//span[contains(text(),'Verdana')]")
     public WebElement VerdanaFontOnFontFamilyOnTextOnDrawTool;
+
+
+    public void clickTextOnDrawTool(){
+        TextOnDrawTool.click();
+    }
+
+    public void clickFontFamilyTool(){
+        FontFamilyOnTextOnDrawTool.click();
+    }
+    public void clickFontFArial(){
+        BrowserUtils.clickWithJS(ArialFontOnFontFamilyOnTextOnDrawTool);
+    }
+
+    public void clickFontFArialBlack(){
+        ArialBlackFontOnFontFamilyOnTextOnDrawTool.click();
+    }
+
+    public void InsideTextonText(){
+        System.out.println("1. "+ FontFamilyWordOnTextOnDrawTool.getText());
+        System.out.println("2. "+ FontSizeWordOnTextOnDrawTool.getText());
+        System.out.println("3. "+ BoldWordOnTextOnDrawTool.getText());
+        System.out.println("4. "+ ItalicizeWordOnTextOnDrawTool.getText());
+    }
 
 
 

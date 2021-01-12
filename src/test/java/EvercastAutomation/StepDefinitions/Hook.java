@@ -3,8 +3,10 @@ package EvercastAutomation.StepDefinitions;
 import EvercastAutomation.Utilities.ConfigurationReader;
 import EvercastAutomation.Utilities.Driver;
 import io.cucumber.core.api.Scenario;
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+//import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -25,7 +27,7 @@ public class Hook {
         //if test failed - do this
         if(scenario.isFailed()){
             byte[] screenshot = ((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot,"images/png");
+            scenario.embed(screenshot,"image/png","Screenshot");
             //scenario.embed(screenshot, "image/png");
             System.out.println("Test failed!");
 

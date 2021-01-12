@@ -11,10 +11,14 @@ public class TextFSizePage {
     }
 
 
+    @FindBy(xpath = "(//*[@class='MuiList-root MuiList-padding'])[3]")
+    public WebElement FontSizesSelectorOnTextOnDrawTool;
+
     @FindBy(xpath = "//span[contains(text(),'Font Size')]")
     public WebElement FontSizesOnTextOnDrawTool;
 
-    @FindBy(xpath = "//span[contains(text(),'10px')]")
+    //   //span[contains(text(),'10px')]
+    @FindBy(xpath = "(//li[@role='menuitem'])[12]")
     public WebElement px10FontSizesOnTextOnDrawTool;
 
     @FindBy(xpath = "//span[contains(text(),'12px')]")

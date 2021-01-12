@@ -13,8 +13,9 @@ import org.junit.runner.RunWith;
             glue = "EvercastAutomation/StepDefinitions",
             dryRun = false,
 //            monochrome = true,
-//            strict = true,
-            tags = "@DemoNegative, @DemoPositive" ,
+            strict = true,
+            tags = "@0001_1" ,
+
 //
             plugin = {"html:target/default-cucumber-reports",
                         "json:target/cucumber.json",

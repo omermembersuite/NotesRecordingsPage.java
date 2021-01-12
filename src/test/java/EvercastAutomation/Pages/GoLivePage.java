@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class GoLivePage extends BasePage {
 
@@ -46,6 +49,49 @@ public class GoLivePage extends BasePage {
     @FindBy(xpath = "//*[@title='Disable Fullscreen']")
     public WebElement DemoDisableFullScreen;
 
+    @FindBy(xpath = "(//*[@class='MuiFormControl-root MuiFormControl-fullWidth'])[1]")
+    public WebElement cameraListBeforeGoOptions;
+
+    @FindBy(xpath = "//*[@role='listbox']//*[@data-value='none']")
+    public WebElement NoneCameraBeforeGoOptions;
+
+    @FindBy(xpath = "(//*[@class='MuiFormControl-root MuiFormControl-fullWidth'])[2]")
+    public WebElement micListBeforeGoOptions;
+
+    @FindBy(xpath = "(//*[@role='option'])[1]")
+    public WebElement NoneMicBeforeGoOptions;
+
+    @FindBy(xpath = "(//*[@class='MuiFormControl-root MuiFormControl-fullWidth'])[3]")
+    public WebElement audioListBeforeGoOptions;
+
+    @FindBy(xpath = "(//li[@role='option'])[1]")
+    public WebElement NoneAudioBeforeGoOptions;
+
+
+
+    public void noneForCameraBeforeGo(){
+        cameraListBeforeGoOptions.click();
+        BrowserUtils.wait(2);
+        NoneCameraBeforeGoOptions.click();
+        BrowserUtils.wait(1);
+
+    }
+
+    public void noneForMicrophoneBeforeGo(){
+        micListBeforeGoOptions.click();
+        BrowserUtils.wait(2);
+        NoneMicBeforeGoOptions.click();
+        BrowserUtils.wait(1);
+
+    }
+
+    public void noneForAudioBeforeGo(){
+        audioListBeforeGoOptions.click();
+        BrowserUtils.wait(2);
+        NoneAudioBeforeGoOptions.click();
+        BrowserUtils.wait(1);
+
+    }
     public GoLivePage() {
         //it's mandatory if you want to use @FindBy annotation
         //this means LoginPage class

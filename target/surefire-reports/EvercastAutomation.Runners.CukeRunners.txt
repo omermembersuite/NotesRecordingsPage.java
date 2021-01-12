@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: EvercastAutomation.Runners.CukeRunners
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 11.43 s <<< FAILURE! - in EvercastAutomation.Runners.CukeRunners
+In order to verify enter Go Live page(Login the Go Live)  Time elapsed: 10.796 s  <<< ERROR!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'omers-MacBook-Pro.local', ip: 'fe80:0:0:0:460:6d5a:cf16:5ecf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/1x/ny6f19h95wv...}, goog:chromeOptions: {debuggerAddress: localhost:56077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b683c55b8590b97377e0828ef8a9fe15
+*** Element info: {Using=xpath, value=//*[@class='lobby-subtitle']}
+
+In order to verify enter Go Live page(Login the Go Live)  Time elapsed: 10.798 s  <<< ERROR!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'omers-MacBook-Pro.local', ip: 'fe80:0:0:0:460:6d5a:cf16:5ecf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/1x/ny6f19h95wv...}, goog:chromeOptions: {debuggerAddress: localhost:56077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b683c55b8590b97377e0828ef8a9fe15
+

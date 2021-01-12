@@ -17,9 +17,9 @@ public class DrawAnnotationsPage extends BasePage{
     @FindBy(xpath = "//*[@data-testid='draw-toggle-button']")
     public WebElement drawToolOnHiddenBar;
 
-    @FindBy(xpath = "//*[@class ='MuiTypography-root side-drawer-typography MuiTypography-body1']")
+    @FindBy(xpath = "//p[contains(text(),'Annotations')]")
     public WebElement drawToolAnnotation;
-
+ //
     @FindBy(xpath = "//span[contains(text(),'Draw')]")
     public WebElement drawWordOnDrawTool;
 
@@ -41,20 +41,8 @@ public class DrawAnnotationsPage extends BasePage{
     @FindBy(xpath = "//span[contains(text(),'Clear All')]")
     public WebElement ClearAllWordDrawTool;
 
-    @FindBy(xpath = "//*[@data-testid='drawtool-icon-pencil']")
-    public WebElement DrawIconDrawTool;
 
-    @FindBy(xpath = "//*[@class='MuiBox-root jss144 size-slider-filled-circle']")
-    public WebElement DrawIconSizeCircle;
 
-    @FindBy(css = ".jss155 [focusable]")
-    public WebElement PinToolOnDrawTool;
-
-    @FindBy(xpath = "//*[@data-testid='side-drawer-pinned-button']")
-    public WebElement UnPinnedToolOnDrawTool;
-
-    @FindBy(css = ".jss162 > [tabindex] [focusable]")
-    public WebElement closeButtonOnDrawTool;
 
 
     public void checkAnnotations(){

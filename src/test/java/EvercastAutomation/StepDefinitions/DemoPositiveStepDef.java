@@ -8,6 +8,7 @@ import EvercastAutomation.Utilities.BrowserUtils;
 import EvercastAutomation.Utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class DemoPositiveStepDef {
     LoginPage loginPage= new LoginPage();
@@ -19,12 +20,18 @@ public class DemoPositiveStepDef {
     public void user_should_be_able_to_click_go_Live() {
         BrowserUtils.wait(2);
         goLivePage.goLive();
-        BrowserUtils.wait(4);
+        BrowserUtils.wait(2);
     }
     @Then("user should be able to click botton hidden bar")
     public void user_should_be_able_to_click_botton_hidden_bar() {
 
+        BrowserUtils.wait(2);
         drawAnnotationsPage.buttonHiddenBar.click();
+        Assert.assertTrue(drawAnnotationsPage.buttonHiddenBar.isDisplayed());
+        Assert.assertNotNull(drawAnnotationsPage.buttonHiddenBar.isEnabled());
+
+
+
     }
 
     @When("user should be able to login click draw tool")

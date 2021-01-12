@@ -12,7 +12,7 @@ public class ShapesToolPage extends BasePage {
     }
 
 
-    @FindBy(xpath = "//*[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root menu-item-with-submenu Mui-selected MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected']")
+    @FindBy(xpath = "(//div[@data-testid='menu-item-with-submenu-icon']//*)[3]")
     public WebElement ShapesOnDrawTool;
 
     @FindBy(xpath = "//*[@class='MuiBox-root jss119 size-slider-filled-circle']")
@@ -50,6 +50,9 @@ public class ShapesToolPage extends BasePage {
     public WebElement SquareOnShapesOnDrawTool;
 
 
+    public void clickShapesOnDrawTool(){
+        ShapesOnDrawTool.click();
+    }
 
     public void ShapesMenuListOnShapesOnDrawTool(){
 
