@@ -1,16 +1,11 @@
 @DemoPositive
-Feature: Writing Text On Screen-Positive
+Feature: Demo-Donations
   In order to perform sucessful login
   As a user
   I should be able to login with correct credentials
-  Background:
 
-    When User is on the Login page
-    Then User enters username
-    Then User enters password
-    Then User click on Log in button
+  Scenario: In order to verify Donations page
 
-  Scenario: In order to verify enter Go Live page
     When user should be able to login into existing room
     Then user should be able to see Welcome to the Lobby on the page
     Then user should be able to click disable microphone
