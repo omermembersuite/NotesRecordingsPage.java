@@ -1,23 +1,37 @@
 package MemberSuite.Pages;
 
-import MemberSuite.Utilities.ConfigurationReader;
 import MemberSuite.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage{
+public class MainPage extends BasePage{
 
-    @FindBy(xpath = "//*[@name='email']")
-    public WebElement email;
+    @FindBy(xpath = "//a[contains(text(),'Allow')]")
+    public WebElement allowCookies;
 
-    @FindBy(xpath = "//*[@name='password']")
-    public WebElement password;
+    @FindBy(xpath = "//profile-chip[@ng-reflect-is-from-mobile='false']//img[@class='profile-image']")
+    public WebElement profileButton;
 
-    @FindBy(xpath = "//*[@type='button']")
-    public WebElement SignInButton;
+    @FindBy(xpath = "(//*[contains(text(),' Login')])[2]")
+    public WebElement loginOnProfile;
 
-    public LoginPage() {
+    @FindBy(id = "fca60cdf-f709-4cf5-923a-8ee5ef9f9987")
+    public WebElement usernameInput;
+
+    @FindBy(id = "3d20b1e6-cdb1-44f9-8344-5533735084c7")
+    public WebElement passwordInput;
+
+    @FindBy(id = "3c8f8aec-1300-49f4-8a81-eb7849b6df12")
+    public WebElement signInButton;
+
+    @FindBy(xpath = "//div[@class='active ng-star-inserted']//img[@class='switch-profile-user-image activeProfile']")
+    public WebElement tuesdayCooper;
+
+
+
+
+    public MainPage() {
         //it's mandatory if you want to use @FindBy annotation
         //this means LoginPage class
         //Driver.get() return webdriver object

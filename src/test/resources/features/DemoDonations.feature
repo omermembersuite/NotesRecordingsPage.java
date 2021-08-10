@@ -1,4 +1,4 @@
-@DemoPositive
+@DemoDonation
 Feature: Demo-Donations
   In order to perform sucessful login
   As a user
@@ -6,12 +6,12 @@ Feature: Demo-Donations
 
   Scenario: In order to verify Donations page
 
-    When user should be able to login into existing room
-    Then user should be able to see Welcome to the Lobby on the page
-    Then user should be able to click disable microphone
-    Then user should be able to click disable camera
-    When user should be able to click go Live!
-    Then user should be able to click botton hidden bar
-    When user should be able to login click draw tool
-    Then user should be able to see Draw, Shapes, Text, Color, Stroke, Eraser, Clear All
+    When user should be able to login into users page
+    Then user should be able to click make donation
+    And user should be able to choose donation fund
+    Then user should be able to fill out address and payment for fund
+    And user should be able to get successful donation message
+
+
+
 
