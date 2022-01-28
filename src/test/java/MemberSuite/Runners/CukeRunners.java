@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
             dryRun = false,
 //            monochrome = true,
             strict = true,
-            tags = "@SubscribePublication" ,
+            tags = "@LoginIndividualPositive" ,
 
 //
             plugin = {"html:target/default-cucumber-reports",

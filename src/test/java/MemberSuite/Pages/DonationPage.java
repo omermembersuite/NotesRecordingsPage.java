@@ -13,6 +13,51 @@ public class DonationPage extends BasePage{
     @FindBy(xpath = "//div[contains(text(),'Make a Donation')]")
     public WebElement makeDonation;
 
+    @FindBy(xpath = "//div[contains(text(),'View My Giving History')]")
+    public WebElement viewGivingHistory;
+
+    @FindBy(xpath = "//h2[normalize-space()='My Giving History']")
+    public WebElement givingHistoryOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Last Year']")
+    public WebElement lastYearonView;
+
+    @FindBy(xpath = "//span[normalize-space()='Total']")
+    public WebElement totalOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Gift #']")
+    public WebElement giftOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Gift Fund']")
+    public WebElement giftFundOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Gift Amount']")
+    public WebElement giftAmountOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Gift Date']")
+    public WebElement giftDateOnView;
+
+    @FindBy(xpath = "//span[normalize-space()='Type']")
+    public WebElement typeOnView;
+
+    @FindBy(xpath = "(//i[@class='icon-arrow-up arrow ng-star-inserted'])[1]")
+    public WebElement giftArrowOnView;
+
+    @FindBy(xpath = "(//i[@class='icon-arrow-up arrow ng-star-inserted'])[2]")
+    public WebElement giftFundArrowOnView;
+
+    @FindBy(xpath = "(//i[@class='icon-arrow-up arrow ng-star-inserted'])[3]")
+    public WebElement giftAmountArrowOnView;
+
+    @FindBy(xpath = "(//i[@class='icon-arrow-up arrow ng-star-inserted'])[4]")
+    public WebElement giftDateArrowOnView;
+
+    @FindBy(xpath = "(//i[@class='icon-arrow-up arrow ng-star-inserted'])[5]")
+    public WebElement giftTypeArrowOnView;
+
+    @FindBy(xpath ="//h2[normalize-space()='My Open Pledges and Recurring Gifts']")
+    public WebElement openPledgesOnView;
+
     @FindBy(xpath = "//label[@for='mat-radio-8-input']//div[@class='mat-radio-outer-circle']")
     public WebElement funnyMoneyFundExample;
 

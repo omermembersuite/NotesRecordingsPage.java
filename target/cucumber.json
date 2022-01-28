@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-10T18:11:00.527Z",
+        "start_timestamp": "2022-01-19T14:26:01.845Z",
         "before": [
           {
             "result": {
-              "duration": 4523446901,
+              "duration": 3853483483,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "In order to verify Subscribe Publication",
+        "line": 7,
+        "name": "In order to verify Login Functionality",
         "description": "",
-        "id": "subscribe-to-a-publication;in-order-to-verify-subscribe-publication",
+        "id": "login-successfully;in-order-to-verify-login-functionality",
         "after": [
           {
             "result": {
-              "duration": 806706500,
+              "duration": 121793831,
               "status": "passed"
             },
             "match": {
@@ -35,80 +35,32 @@
         "steps": [
           {
             "result": {
-              "duration": 20281423900,
+              "duration": 22653614730,
               "status": "passed"
             },
-            "line": 6,
+            "line": 9,
             "name": "user should be able to login into users page",
             "match": {
               "location": "DemoDonationStepDefs.user_should_be_able_to_login_into_users_page()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2082937700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user should be able to click shop",
-            "match": {
-              "location": "SubscribePublicationStepDefs.user_should_be_able_to_click_shop()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2054909301,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should be able to subscribe to a publication",
-            "match": {
-              "location": "SubscribePublicationStepDefs.user_should_be_able_to_subscribe_to_a_publication()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2064731900,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user should be able to one of publications",
-            "match": {
-              "location": "SubscribePublicationStepDefs.user_should_be_able_to_one_of_publications()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 38764761899,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user should be able to pay existing electronic payment and checkout",
-            "match": {
-              "location": "SubscribePublicationStepDefs.user_should_be_able_to_pay_existing_electronic_payment_and_checkout()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@SubscribePublication"
+            "name": "@LoginIndividualPositive"
           }
         ]
       }
     ],
-    "name": "Subscribe to a Publication",
-    "description": "",
-    "id": "subscribe-to-a-publication",
+    "name": "Login Successfully",
+    "description": "  In order to perform sucessful login\n  As a user\n  I should be able to login with correct credentials",
+    "id": "login-successfully",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/SubscribePublication.feature",
+    "uri": "file:src/test/resources/features/LoginIndividualPositive.feature",
     "tags": [
       {
-        "name": "@SubscribePublication",
+        "name": "@LoginIndividualPositive",
         "type": "Tag",
         "location": {
           "line": 1,

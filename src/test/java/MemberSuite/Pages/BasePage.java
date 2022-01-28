@@ -30,6 +30,7 @@ public class BasePage {
 
 
     /**
+     * commit
      * While this loading screen present, html code is a not complete
      * Some elements can be missing
      * Also, you won't be able to interact with any elements

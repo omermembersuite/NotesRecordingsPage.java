@@ -17,9 +17,23 @@ public class DemoDonationStepDefs {
 
     @When("user should be able to login into users page")
     public void user_should_be_able_to_login_into_users_page() {
-    BrowserUtils.wait(1);
-    mainPage.allowCookies.click();
-    BrowserUtils.wait(1);
+
+        BrowserUtils.wait(2);
+        mainPage.allowCookies.click();
+        BrowserUtils.wait(3);
+
+    Assert.assertTrue(mainPage.homeOnMainPage.getText().equals("Home"));
+    Assert.assertTrue(mainPage.eventsOnMainPage.getText().equals("Events"));
+    Assert.assertTrue(mainPage.communityOnMainPage.getText().equals("Community"));
+    Assert.assertTrue(mainPage.shopOnMainPage.getText().equals("Shop"));
+    Assert.assertTrue(mainPage.donationsOnMainPage.getText().equals("Donations"));
+    Assert.assertTrue(mainPage.certificationsOnMainPage.getText().equals("Certifications"));
+//    Assert.assertTrue(mainPage.newFormOnMainPage.getText().equals("831 new form"));
+//    Assert.assertTrue(mainPage.newFormLinkOnMainPage.getText().equals("new form link"));
+    Assert.assertNotNull(mainPage.cartOnMainPage);
+    Assert.assertTrue(mainPage.welcomeOnMainPage.getText().equals("Welcome!"));
+
+
     mainPage.profileButton.click();
     BrowserUtils.wait(1);
     mainPage.loginOnProfile.click();
@@ -29,9 +43,9 @@ public class DemoDonationStepDefs {
     mainPage.passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
     BrowserUtils.wait(1);
     mainPage.signInButton.click();
-    BrowserUtils.wait(7);
-    mainPage.tuesdayCooper.click();
-    BrowserUtils.wait(3);
+    BrowserUtils.wait(10);
+//    mainPage.tuesdayCooper.click();
+//    BrowserUtils.wait(3);
     }
 
     @Then("user should be able to click make donation")

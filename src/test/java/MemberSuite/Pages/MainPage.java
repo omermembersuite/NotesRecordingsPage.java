@@ -10,7 +10,7 @@ public class MainPage extends BasePage{
     @FindBy(xpath = "//a[contains(text(),'Allow')]")
     public WebElement allowCookies;
 
-    @FindBy(xpath = "//profile-chip[@ng-reflect-is-from-mobile='false']//img[@class='profile-image']")
+    @FindBy(xpath = "(//img[@data-test='profile-icon'])[2]")
     public WebElement profileButton;
 
     @FindBy(xpath = "(//*[contains(text(),' Login')])[2]")
@@ -25,8 +25,41 @@ public class MainPage extends BasePage{
     @FindBy(id = "3c8f8aec-1300-49f4-8a81-eb7849b6df12")
     public WebElement signInButton;
 
-    @FindBy(xpath = "//div[@class='active ng-star-inserted']//img[@class='switch-profile-user-image activeProfile']")
+    @FindBy(xpath = "//div[@class='profile-body ng-star-inserted']//div[@class='active ng-star-inserted']")
     public WebElement tuesdayCooper;
+
+    @FindBy(xpath = "//*[contains(text(),'Home')]")
+    public WebElement homeOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Events']")
+    public WebElement eventsOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Community']")
+    public WebElement communityOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Shop']")
+    public WebElement shopOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Donations']")
+    public WebElement donationsOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='Certifications']")
+    public WebElement certificationsOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='831 new form']")
+    public WebElement newFormOnMainPage;
+
+    @FindBy(xpath = "//span[normalize-space()='new form link']")
+    public WebElement newFormLinkOnMainPage;
+
+    @FindBy(xpath = "//nav-cart[@class='cart-icon']//span[@class='icon-cart']")
+    public WebElement cartOnMainPage;
+
+    @FindBy(xpath = "//img[@class='logo-2']")
+    public WebElement logoOnMainPage;
+
+    @FindBy(xpath = "//h1[normalize-space()='Welcome!']")
+    public WebElement welcomeOnMainPage;
 
 
 
